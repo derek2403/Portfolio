@@ -75,7 +75,10 @@ export default function WebHome() {
   };
 
   return (
-    <div className="relative h-screen bg-blue-900 overflow-hidden">
+    <div 
+      className="relative h-screen overflow-hidden bg-cover bg-center"
+      style={{ backgroundImage: "url('/assets/wallpaper.png')" }}
+    >
       <div className="absolute top-0 w-full bg-gray-300 text-black p-2 flex justify-center">
         <h1 className="font-mono">Derek's Portfolio</h1>
       </div>
@@ -127,19 +130,19 @@ export default function WebHome() {
           className="w-12 h-12 cursor-pointer"
           onClick={() => handleAppOpen('aboutMe')}
         >
-          <img src="/icons/about.png" alt="About Me" className="w-full h-full" />
+          <img src="/assets/aboutme.png" alt="About Me" className="w-full h-full" />
         </div>
         <div
           className="w-12 h-12 cursor-pointer"
           onClick={() => handleAppOpen('projects')}
         >
-          <img src="/icons/projects.png" alt="Projects" className="w-full h-full" />
+          <img src="/assets/project.png" alt="Projects" className="w-full h-full" />
         </div>
         <div
           className="w-12 h-12 cursor-pointer"
           onClick={() => handleAppOpen('achievements')}
         >
-          <img src="/icons/achievements.png" alt="Achievements" className="w-full h-full" />
+          <img src="/assets/achievement.png" alt="Achievements" className="w-full h-full" />
         </div>
       </div>
     </div>
