@@ -29,7 +29,6 @@ export default function WebHome() {
     achievements: { width: 600, height: 400 },
   });
 
-  const [highestZIndex, setHighestZIndex] = useState(10);
   const [windowSize, setWindowSize] = useState({ width: 0, height: 0 });
 
   useEffect(() => {
@@ -51,14 +50,10 @@ export default function WebHome() {
   };
 
   const bringToFront = (appName) => {
-    setHighestZIndex((prev) => {
-      const newZIndex = prev + 1;
-      setZIndices((prevZIndices) => ({
-        ...prevZIndices,
-        [appName]: newZIndex,
-      }));
-      return newZIndex;
-    });
+    setZIndices((prevZIndices) => ({
+      ...prevZIndices,
+      [appName]: Math.max(...Object.values(prevZIndices)) + 1,
+    }));
   };
 
   const updatePosition = (appName, newPosition) => {
