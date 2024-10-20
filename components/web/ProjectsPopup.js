@@ -116,17 +116,19 @@ export default function ProjectsPopup({ onClose, zIndex, bringToFront, position,
                 </a>
               </div>
             ) : (
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+              <div className="flex flex-wrap -mx-2">
                 {projects.map((project, index) => (
                   <div 
                     key={index} 
-                    className="border rounded-lg p-4 cursor-pointer hover:shadow-md transition-shadow"
+                    className="w-full sm:w-1/2 md:w-1/3 px-2 mb-4"
                     onClick={() => setSelectedProject(project)}
                   >
-                    <img src={project.img} alt={project.name} className="w-full h-40 object-cover rounded-lg mb-2" />
-                    <h3 className="font-semibold">{project.name}</h3>
-                    <p className="text-sm text-gray-600 mb-1">{project.desc}</p>
-                    <p className="text-xs text-gray-500">Built at: {project.builtAt}</p>
+                    <div className="border rounded-lg p-4 cursor-pointer hover:shadow-md transition-shadow h-full flex flex-col">
+                      <img src={project.img} alt={project.name} className="w-full h-40 object-cover rounded-lg mb-2" />
+                      <h3 className="font-semibold">{project.name}</h3>
+                      <p className="text-sm text-gray-600 mb-1 flex-grow">{project.desc}</p>
+                      <p className="text-xs text-gray-500">Built at: {project.builtAt}</p>
+                    </div>
                   </div>
                 ))}
               </div>

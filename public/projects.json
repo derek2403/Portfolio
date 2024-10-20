@@ -7,5 +7,14 @@
       "video": "/projects/justETH/justETH.mp4",
       "githubLink": "https://github.com/username/repo",
       "details": "Key Features:\n\n- Blockchain-based voting system\n- AI-powered restaurant recommendations\n- Dynamic user reputation system\n\nTechnologies Used:\n\n- Ethereum Smart Contracts\n- React Native\n- TensorFlow for AI integration"
-    }
+    },
+    {
+        "name": "justETH",
+        "desc": "Just ETH is an innovative, food rating app with dynamic voting power by redefining restaurant ratings through blockchain and AI.",
+        "builtAt": "ETHKL 2024",
+        "img": "/projects/justETH/justETH.jpeg",
+        "video": "/projects/justETH/justETH.mp4",
+        "githubLink": "https://github.com/username/repo",
+        "details": "Key Features:\n\n- Blockchain-based voting system\n- AI-powered restaurant recommendations\n- Dynamic user reputation system\n\nTechnologies Used:\n\n- Ethereum Smart Contracts\n- React Native\n- TensorFlow for AI integration"
+      }
   ]
