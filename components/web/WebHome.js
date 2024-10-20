@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Image from 'next/image';
 import AboutMePopup from '@/components/web/AboutMePopup';
 import ProjectsPopup from '@/components/web/ProjectsPopup';
 import AchievementsPopup from '@/components/web/AchievementsPopup';
@@ -80,7 +81,7 @@ export default function WebHome() {
       style={{ backgroundImage: "url('/assets/wallpaper.png')" }}
     >
       <div className="absolute top-0 w-full bg-gray-300 text-black p-2 flex justify-center">
-        <h1 className="font-mono">Derek's Portfolio</h1>
+        <h1 className="font-mono">Derek&apos;s Portfolio</h1>
       </div>
 
       {/* Container for popups */}
@@ -130,19 +131,19 @@ export default function WebHome() {
           className="w-12 h-12 cursor-pointer"
           onClick={() => handleAppOpen('aboutMe')}
         >
-          <img src="/assets/aboutme.png" alt="About Me" className="w-full h-full" />
+          <Image src="/assets/aboutme.png" alt="About Me" width={48} height={48} />
         </div>
         <div
           className="w-12 h-12 cursor-pointer"
           onClick={() => handleAppOpen('projects')}
         >
-          <img src="/assets/project.png" alt="Projects" className="w-full h-full" />
+          <Image src="/assets/project.png" alt="Projects" width={48} height={48} />
         </div>
         <div
           className="w-12 h-12 cursor-pointer"
           onClick={() => handleAppOpen('achievements')}
         >
-          <img src="/assets/achievement.png" alt="Achievements" className="w-full h-full" />
+          <Image src="/assets/achievement.png" alt="Achievements" width={48} height={48} />
         </div>
       </div>
     </div>

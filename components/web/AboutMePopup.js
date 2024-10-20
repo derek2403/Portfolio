@@ -1,4 +1,5 @@
 import { useCallback } from 'react';
+import Image from 'next/image';
 import Draggable from 'react-draggable';
 import { Resizable } from 'react-resizable';
 import 'react-resizable/css/styles.css';
@@ -72,34 +73,34 @@ export default function AboutMePopup({ onClose, zIndex, bringToFront, position, 
               <h1 className="text-3xl font-bold mb-2">Liew Qi Jian</h1>
               <h2 className="text-xl text-gray-600 mb-4">Student</h2>
               <p className="text-l mb-4">
-              Pursuing a Bachelor's degree in Computer Science specialize in Data Science at TARUMT. Currently the Founder and President of TARUMT Blockchain Club.</p>
+              Pursuing a Bachelor&apos;s degree in Computer Science specialize in Data Science at TARUMT. Currently the Founder and President of TARUMT Blockchain Club.</p>
               <div className="social-links mb-4 space-y-2">
                 <a href="mailto:derekliew0@gmail.com" className="flex items-center space-x-2" target="_blank" rel="noopener noreferrer">
-                  <img src="https://static.vecteezy.com/system/resources/previews/022/613/021/non_2x/google-mail-gmail-icon-logo-symbol-free-png.png" alt="Gmail" className="w-6 h-6 object-contain" />
+                  <Image src="https://static.vecteezy.com/system/resources/previews/022/613/021/non_2x/google-mail-gmail-icon-logo-symbol-free-png.png" alt="Gmail" width={24} height={24} className="object-contain" />
                   <span>derekliew0@gmail.com</span>
                 </a>
                 <a href="https://www.instagram.com/liew_qijian/" className="flex items-center space-x-2" target="_blank" rel="noopener noreferrer">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Gmail" className="w-6 h-6 object-contain" />
+                  <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" alt="Instagram" width={24} height={24} className="object-contain" />
                   <span>liew_qijian</span>
                 </a>
                 <a href="https://www.linkedin.com/in/derek2403" className="flex items-center space-x-2" target="_blank" rel="noopener noreferrer">
-                  <img src="https://i.pinimg.com/originals/b2/f8/28/b2f828513f21444829a619ce563d4d4e.png" alt="LinkedIn" className="w-6 h-6 object-contain" />
+                  <Image src="https://i.pinimg.com/originals/b2/f8/28/b2f828513f21444829a619ce563d4d4e.png" alt="LinkedIn" width={24} height={24} className="object-contain" />
                   <span>derek2403</span>
                 </a>
                 <a href="https://github.com/derek2403/" className="flex items-center space-x-2" target="_blank" rel="noopener noreferrer">
-                  <img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="GitHub" className="w-6 h-6 object-contain" />
+                  <Image src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="GitHub" width={24} height={24} className="object-contain" />
                   <span>derek2403</span>
                 </a>
                 <a href="https://x.com/derek2403?s=21" className="flex items-center space-x-2" target="_blank" rel="noopener noreferrer">
-                  <img src="https://freelogopng.com/images/all_img/1657045444twitter-logo-transparent-png.png" alt="X (Twitter)" className="w-6 h-6 object-contain" />
+                  <Image src="https://freelogopng.com/images/all_img/1657045444twitter-logo-transparent-png.png" alt="X (Twitter)" width={24} height={24} className="object-contain" />
                   <span>@derek2403</span>
                 </a>
                 <a href="https://t.me/dxx_j" className="flex items-center space-x-2" target="_blank" rel="noopener noreferrer">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/2048px-Telegram_2019_Logo.svg.png" alt="Telegram" className="w-6 h-6 object-contain" />
+                  <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Telegram_2019_Logo.svg/2048px-Telegram_2019_Logo.svg.png" alt="Telegram" width={24} height={24} className="object-contain" />
                   <span>@dxx_j</span>
                 </a>
                 <a href="https://api.whatsapp.com/send/?phone=60127173985&text&type=phone_number&app_absent=0" className="flex items-center space-x-2" target="_blank" rel="noopener noreferrer">
-                  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="WhatsApp" className="w-6 h-6 object-contain" />
+                  <Image src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/2044px-WhatsApp.svg.png" alt="WhatsApp" width={24} height={24} className="object-contain" />
                   <span>+60127173985</span>
                 </a>
               </div>
@@ -161,7 +162,7 @@ I am currently focused on Web3 and AI, exploring innovative technologies that br
                     <p className="text-sm font-medium mt-1">Roles & Achievements:</p>
                     <ul className="list-disc list-inside text-sm ml-2">
                       <li>Founder and President of TARUMT Blockchain Club</li>
-                      <li>Dean's List and President's List awardee in 2024</li>
+                      <li>Dean&apos;s List and President&apos;s List awardee in 2024</li>
                       <li>Various Hackathon Participant and Winner</li>
                     </ul>
                   </div>

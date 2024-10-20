@@ -1,4 +1,5 @@
 import { useCallback, useState, useEffect } from 'react';
+import Image from 'next/image';
 import Draggable from 'react-draggable';
 import { Resizable } from 'react-resizable';
 import 'react-resizable/css/styles.css';
@@ -94,9 +95,11 @@ export default function ProjectsPopup({ onClose, zIndex, bringToFront, position,
                       Your browser does not support the video tag.
                     </video>
                   )}
-                  <img 
+                  <Image 
                     src={selectedProject.img} 
                     alt={selectedProject.name} 
+                    width={300}
+                    height={200}
                     className="w-1/2 h-auto object-cover rounded-lg"
                   />
                 </div>
@@ -124,7 +127,7 @@ export default function ProjectsPopup({ onClose, zIndex, bringToFront, position,
                     onClick={() => setSelectedProject(project)}
                   >
                     <div className="border rounded-lg p-4 cursor-pointer hover:shadow-md transition-shadow h-full flex flex-col">
-                      <img src={project.img} alt={project.name} className="w-full h-40 object-cover rounded-lg mb-2" />
+                      <Image src={project.img} alt={project.name} width={300} height={160} className="w-full h-40 object-cover rounded-lg mb-2" />
                       <h3 className="font-semibold">{project.name}</h3>
                       <p className="text-sm text-gray-600 mb-1 flex-grow">{project.desc}</p>
                       <p className="text-xs text-gray-500">Built at: {project.builtAt}</p>

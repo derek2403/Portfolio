@@ -1,4 +1,5 @@
 import { useCallback, useState, useEffect } from 'react';
+import Image from 'next/image';
 import Draggable from 'react-draggable';
 import { Resizable } from 'react-resizable';
 import 'react-resizable/css/styles.css';
@@ -79,9 +80,11 @@ export default function AchievementsPopup({ onClose, zIndex, bringToFront, posit
               {achievements.map((achievement, index) => (
                 <div key={index} className="w-full sm:w-1/2 md:w-1/3 px-2 mb-4">
                   <div className="border rounded-lg p-4 h-full flex flex-col">
-                    <img 
+                    <Image 
                       src={achievement.img} 
                       alt={achievement.name} 
+                      width={96}
+                      height={96}
                       className="w-24 h-24 object-contain mx-auto mb-2"
                     />
                     <h3 className="font-semibold text-center mb-2">{achievement.name}</h3>
